@@ -12,3 +12,9 @@ To use it for your ComfyUI:
 - Copy pyproject.toml and updater.sh to your existing ComfyUI repo
 - Run updater.sh - it will pull newest ComfyUI and custom-nodes
 
+# Troubleshooting
+
+## Black output from Qwen models with Sageattention
+
+Use KJNodes "Patch Sage Attention" node with sageattn_qk_int8_pv_fp16_cuda backend instead.
+
