@@ -1,0 +1,211 @@
+# dla insightface
+# export CC=gcc
+# export CXX=g++
+
+[project]
+name = "comfyui"
+version = "0.1.0"
+description = "ComfyUI uv config"
+readme = "README.md"
+
+requires-python = "==3.12.12"
+dependencies = [
+        "accelerate>=1.2.1",
+        "aiohttp==3.11.8",
+        "albumentations==1.4.23",
+        "anthropic>=0.42.0",
+        "blend-modes==2.2.0",
+        "chromadb>=0.5.23",
+        "colorama>=0.4.6",
+        "decord>=0.6.0",
+        "deepdiff>=8.1.1",
+        "diskcache>=5.6.3",
+        "docstring-parser>=0.16",
+        "docx2txt>=0.8",
+        "gguf>=0.13.0",
+        "gitpython==3.1.43",
+        "glfw==2.8.0",
+        "glitch-this==1.0.3",
+        "google-generativeai==0.8.3",
+        "hydra-core==1.3.2",
+        "iopath==0.1.10",
+        "kornia==0.7.1",
+        "langchain-community>=0.3.13",
+        "lark==1.2.2",
+        "librosa==0.10.2",
+        "loguru>=0.7.3",
+        "markdownify>=0.14.1",
+        "mkdocs-material==9.5.49",
+        "mkdocs==1.6.1",
+        "mkdocstrings==0.27.0",
+        "moviepy==1.0.3",
+        "neo4j>=5.27.0",
+        "numexpr>=2.10.2",
+        "numpy>=1.25.0",
+        "ollama>=0.4.4",
+        "open-clip-torch>=2.29.0",
+        "opencv-contrib-python>=4.10.0.84",
+        "opencv-python>=4.10.0",
+        "openpyxl>=3.1.5",
+        "optimum>=1.12.0",
+        "pandas>=2.2.3",
+        "piexif==1.1.3",
+        "pydub==0.25.1",
+        "pyglfw==0.2.2",
+        "pymatting==1.1.13",
+        "pyopengl>=3.1.7",
+        "pytorch-lightning>=2.5.0.post0",
+        "qwen-vl-utils>=0.0.8",
+        "rembg==2.0.61",
+        "reportlab==4.2.5",
+        "requirements-parser==0.11.0",
+        "safetensors>=0.4.2",
+        "scikit-build>=0.18.1",
+        "scikit-learn>=1.6.0",
+        "scipy>=1.13.1",
+        "segment-anything>=1.0",
+        "simpleeval==1.0.3",
+        "spandrel==0.4.0",
+        "symusic==0.5.5",
+        "tbb>=2021.6",
+        "toml==0.10.2",
+        "torchaudio>=2.3.0",
+        "torchvision>=0.17.2",
+        "transformers>=4.37.2",
+        "typing-extensions==4.12.2",
+        "typing==3.10.0.0",
+        "ultralytics>=8.3.53",
+        "webcolors==24.11.1",
+        "pdfplumber==0.11.5",
+        "xlrd==2.0.1",
+        "cython>=3.0.11",
+        "wikipedia>=1.4.0",
+        "addict==2.4.0",
+        "yapf==0.43.0",
+        "streamlit==1.41.1",
+        "tomesd==0.1.3",
+        "insightface==0.7.3",
+        "compel==2.0.3",
+        "pyopengl-accelerate>=3.1.7",
+        "playwright>=1.49.1",
+        "icecream==2.1.4",
+        "py-cord[voice]==2.6.1",
+        "dill==0.3.9",
+        "pypdf2==3.0.1",
+        "scepter>=1.3.1",
+        "comfyui-frontend-package>=1.35.9",
+        "tokenizers>=0.13.3",
+        "sentencepiece==0.2.0",
+        "yarl==1.18.0",
+        "soundfile==0.13.1",
+        "av==14.2.0",
+        "face-alignment==1.4.1",
+        "diffusers>=0.27.2",
+        "openai>=1.66.3",
+        "aisuite==0.1.10",
+        "langchain-openai==0.3.9",
+        "sentence-transformers>=4.0.2",
+        "triton>=3.0.0",
+        "comfyui-workflow-templates>=0.1.34",
+        "natsort==8.4.0",
+        "sounddevice>=0.5.1",
+        "requests==2.32.3",
+        "pdf2image==1.17.0",
+        "gdown==5.2.0",
+        "google-genai==1.2.0",
+        "google-cloud-storage==3.1.0",
+        "fal-client==0.6.0",
+        "pypinyin==0.54.0",
+        "hangul-romanize==0.1.0",
+        "py3langid==0.3.0",
+        "cutlet==0.5.0",
+        "sox==1.5.0",
+        "pymunk==6.8.1",
+        "openunmix==1.3.0",
+        "mido==1.3.3",
+        "pygame==2.6.1",
+        "scikit-image==0.25.2",
+        "termcolor==3.1.0",
+        "spacy==3.8.4",
+        "torch>=2.7.0",
+        "runwayml==3.6.1",
+        "alembic==1.16.2",
+        "chardet==5.2.0",
+        "pymediainfo==7.0.1",
+        "surrealist==1.1.2",
+        "boto3==1.39.3",
+        "redis==6.2.0",
+        "replicate==1.0.7",
+        "comfyui-embedded-docs>=0.2.4",
+        "sqlalchemy==2.0.41",
+        "pydantic~=2.0",
+        "pydantic-settings~=2.0",
+        "colour-science==0.4.6",
+        "py-cpuinfo>=9.0.0",
+        "rp>=0.1.1339",
+        "nvidia-ml-py>=13.580.82",
+        "pymupdf==1.26.4",
+        "mediapipe>=0.10.14",
+        "sam2>=1.1.0",
+        "torch-complex>=0.4.4",
+        "huggingface-hub>=0.25.2",
+        "wget==3.2",
+        "color-matcher==0.6.0",
+        "einops==0.8.1",
+        "keyframed==0.3.15",
+        "lpips==0.1.4",
+        "matplotlib>=3.10.7",
+        "numba>=0.62.1",
+        "pillow>=10.4.0",
+        "psutil==5.9.8",
+        "pyyaml==6.0.3",
+        "torchsde>=0.2.6",
+        "tqdm>=4.67.1",
+        "pyloudnorm>=0.1.1",
+        "rotary-embedding-torch>=0.8.9",
+        "silentcipher>=1.0.5",
+        "peft>=0.17.0",
+        "sageattention>=2.2.0",
+]
+
+
+[tool.uv]
+environments = [
+    "sys_platform == 'linux'",
+]
+
+
+[tool.uv.sources]
+torch = [
+    { index = "cu130" },
+]
+torchvision = [
+    { index = "cu130" },
+]
+torchaudio = [
+    { index = "cu130" },
+]
+
+#sageattention = { index = "sage" }
+sageattention = { git = "https://github.com/thu-ml/SageAttention" }
+
+silentcipher = { git = "https://github.com/SesameAILabs/silentcipher" }
+
+#xformers = { git = "https://github.com/facebookresearch/xformers.git", rev = "main" }
+
+
+[[tool.uv.index]]
+name = "cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[[tool.uv.index]]
+name = "cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+
+# [[tool.uv.index]]
+# name = "sage"
+# url = "https://www.piwheels.org/simple"
+# explicit = true
